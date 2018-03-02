@@ -11,7 +11,6 @@ const con = mongoose.connection;
 con.on('error', console.error.bind(console, '连接数据库失败'));
 con.once('open',()=>{
     console.log("数据库evanDemo链接成功")
-    //成功连接
 })
 
 //body-parser是非常常用的一个express中间件，作用是对post请求的请求体进行解析
